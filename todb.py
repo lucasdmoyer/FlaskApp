@@ -8,7 +8,7 @@ try:
  
 #Create a database session
  
-	db_con = psycopg2.connect(database='yourdbname', user='yourusername', password='yourpassword')
+	db_con = psycopg2.connect(database='catalog', user='catalog', password='password')
 	 
 	#Create a client cursor to execute commands
 	 
