@@ -46,6 +46,6 @@ class Item(Base):
 		'price': self.price,
 		}
 
-engine = create_engine('sqlite:///catalog.db')
+engine = create_engine('sqlite:///itemcatalogwithusers.db')
 
 Base.metadata.create_all(engine)
