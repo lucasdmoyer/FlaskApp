@@ -38,9 +38,6 @@ import requests
 app = Flask(__name__)
 
 # declraes my client ID
-
-CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())['web'
-                                                                ]['client_id']
 APPLICATION_NAME = 'Item Catalog Application'
 
 # Connect to Database and create database session
