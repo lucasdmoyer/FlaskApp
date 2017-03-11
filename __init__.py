@@ -46,7 +46,8 @@ APPLICATION_NAME = 'Item Catalog Application'
 # Connect to Database and create database session
 # updated engine to take from db with users
 
-engine = create_engine('sqlite:///itemcatalogwithusers.db')
+engine = create_engine('postgresql://lucas:password@localhost/items')
+#engine = create_engine('sqlite:///itemcatalogwithusers.db')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -421,6 +422,4 @@ def deleteItem(item_name):
         return render_template('deleteMenuItem.html', item=itemToDelete)
 
 if __name__ == '__main__':
-    app.secret_key = 'super_secret_key'
-    app.debug = True
     app.run()

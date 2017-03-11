@@ -46,6 +46,6 @@ class Item(Base):
 		'price': self.price,
 		}
 
-engine = create_engine('sqlite:///itemcatalogwithusers.db')
+engine = create_engine('postgresql://lucas:password@localhost/items')
 
 Base.metadata.create_all(engine)
