@@ -43,7 +43,7 @@ APPLICATION_NAME = 'Item Catalog Application'
 # Connect to Database and create database session
 # updated engine to take from db with users
 
-engine = create_engine('postgresql://lucas:password@localhost/items')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 #engine = create_engine('sqlite:///itemcatalogwithusers.db')
 Base.metadata.bind = engine
 

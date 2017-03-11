@@ -46,6 +46,6 @@ class Item(Base):
 		'price': self.price,
 		}
 
-engine = create_engine('postgresql://lucas:password@localhost/items')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 
 Base.metadata.create_all(engine)
