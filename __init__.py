@@ -55,6 +55,11 @@ session = DBSession()
 
 # JSON APIs to view Catalog Information
 
+@app.route("/")
+def hello():
+    return "Hello, I love you! Go to /catalog"
+
+
 @app.route('/catalog/JSON')
 def catalogJSON():
     categories = session.query(Category).all()
@@ -418,4 +423,4 @@ def deleteItem(item_name):
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
-    app.run(host='0.0.0.0', port=5003)
+    app.run()
