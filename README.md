@@ -12,6 +12,7 @@ Changed SSH port from 22 to 2200
 Updated all currently installed packages
 Installed and configured Apache2 for a mod_wsgi app
 Cloned a modified version of Item-Catalog for app
+Made it so can't log into root remotely
 
 Resources used:
 https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
