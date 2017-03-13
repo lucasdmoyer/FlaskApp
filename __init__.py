@@ -53,11 +53,6 @@ session = DBSession()
 
 # JSON APIs to view Catalog Information
 
-@app.route("/")
-def hello():
-    return "Hello, I love you! Go to /catalog"
-
-
 @app.route('/catalog/JSON')
 def catalogJSON():
     categories = session.query(Category).all()
