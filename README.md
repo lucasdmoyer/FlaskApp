@@ -1,6 +1,6 @@
-IP address: 54.221.18.223
+IP address: http://204.236.206.70/
 
-URL: http://54.92.203.149/catalog/
+URL: http://http://204.236.206.70//catalog/
 
 Software Installed: Flask, httplib2, Jinja2, oauth2client, psycop2, requests, rsa, six, SQLAlchemy, Werkzeug, pyasn1, pyasn1-modules
 
@@ -12,7 +12,7 @@ Changed SSH port from 22 to 2200
 Updated all currently installed packages
 Installed and configured Apache2 for a mod_wsgi app
 Cloned a modified version of Item-Catalog for app
-Made it so can't log into root remotely
+Made it so can't log into root
 
 Resources used:
 https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
